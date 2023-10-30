@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-stylesheet" />
+    <script src="script.js" defer></script>
+    <script src="fetchRating.js" defer></script>
+    <title>Gourab Mahato - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,500&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            background-color: white;
+            color:black;
+            font-family: "Poppins", sans-serif;
+        }
+        .download-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* On hover style */
+        .download-button:hover {
+            background-color: #2980b9;
+        }
+
+        .my_title {
+            font-size: 4.5rem;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .15em solid white;
+            animation: typing 2s steps(14) forwards;
+        }
+
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        .description {
+            font-size: 2rem;
+            color: greenyellow;
+        }
+
+        header {
+            background-color: black;
+            color: #ffffffae;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .bgimage {
+            height: 80vh;
+            background: url("IMG20230210205946.jpg");
+            background-size: cover;
+            position: relative;
+        }
+
+        .text {
+            text-align: center;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(255, 255, 255);
+        }
+
+        footer {
+            background-color: lavender;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        footer ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #ffffff00;
+            font-weight: bold;
+        }
+
+        .section-box {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #about {
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+
+        #education {
+            background-color: rgba(0, 255, 0, 0.2);
+        }
+
+        #contact {
+            background-color: rgba(0, 0, 255, 0.2);
+        }
+        #Projects {
+            background-color: rgb(209, 209, 255);
+        }
+
+        #Experience {
+            background-color: rgba(0, 255, 0, 0.2);
+        }
+
+        #Skills {
+            background-color: rgb(255, 255, 155);
+        }
+        #Achievements {
+            background-color: rgb(245, 205, 255);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="download-button" href="Gourab's Resume (1).pdf" download="Gourab_Mahato_Resume.pdf">Download my Resume</a>
+        <nav>
+            <ul>
+                <li><a href="#bgimage">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#Projects">Projects</a></li> 
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Skills">Skills</a></li> 
+        <li><a href="#Achievements">Achievements</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bgimage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text">
+                    <h2 class="my_title">
+                        <span>H</span><span>i</span>, <span>i</span>t's <span>m</span><span>e</span> <span>G</span><span>o</span><span>u</span><span>r</span><span>a</span><span>b</span>!
+                    </h2>
+                    <p class="description">I am an ECE sophomore at BIT Mesra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section-box">
+        <h2>About Me</h2>
+        <p>"I have a strong interest in Data Structures and Algorithms (DSA) and Competitive Programming (CP). Simultaneously, I aspire to delve into the field of AI/ML through involvement with the skilled Google community. While pursuing AI/ML, I intend to continue honing my DSA skills in parallel." My interests in tech include:DSA, CP, Artificial Intelligence and Machine Learning, Robotics, Problem Solving on real world problems</p>
+    </section>
+    <section id="education" class="section-box">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>B.Tech in Electronics & Communication Engineering</h3>
+            <p>Birla Institute of Technology, Mesra, Ranchi</p>
+            <p>2022 - Present(2nd yr), 8.385(Cumulative)</p>
+        </div>
+        <div class="education-item">
+            <h3>Intermediate</h3>
+            <p>Sree Ayyappa Public School, Bokaro, Jharkhand</p>
+            <p>2020, 86.4%</p>
+        </div>
+        <div class="education-item">
+            <h3>Matriculation</h3>
+            <p>Ursuline English Medium School, Muri, Ranchi</p>
+            <p>2018, 90.2%</p>
+        </div>
+    </section>
+    <section id="Projects" class="section-box">
+        <h2>Project</h2>
+        <p>Breast Cancer Predictor (03/2023 - 04/2023)
+            I took breast cancer tumor dataset from Kaggle and using
+            Supervised learning and algorithms like Logistic Regression, K-nn, and naive bayes, built a predictive system to check the cancer type.(The motive of this project is to highlight that applicability of
+            this project using real world data can make life simpler as normal
+            diagnosis takes about 10+ days to detect the tumor, where these
+            type of projects comes as blessing and the tumor could be detected in minutes.) Skills: Python (Programming Language) and
+            its libraries, ML. Link to the project : <a href="https://github.com/Gourab357/Breast-Cancer-Predictor">https://github.com/Gourab357/Breast-Cancer-Predictor></a></p>
+        </section>
+        <section id="Experience" class="section-box">
+        <h2>Experience</h2>
+        <p>Associate Member at Developer Student Clubs BIT Mesra (Sep 2023 - Present · 2 mos)Skills: Machine Learning · Machine Learning Algorithms · Python (Programming Language)</p>
+           <p> Member at Finance Club, BIT Mesra (Jan 2023 - Present)</p>
+           <p> Team Srijan(Internship · 7 mos), Chassis Intern(Apr 2023 - Sep 2023 · 6 mosApr 2023 - Sep 2023 · 6 mos), in the Technical Team (Mar 2023 - Jun 2023 · 4 mos)</p>
+    </section>
+    <section id="Skills" class="section-box">
+        <h2>Skills</h2>
+        <p>C++, C, JAVA, python,HTML, CSS, JavaScript</p>
+    </section>   
+    <section id="Achievements" class="section-box">
+        <h2>Achievements</h2>
+        <p>Secured 3rd place in the Tech-A-Thon organized by ECE
+            Society, BIT Mesra (03/2023 - 04/2023) under Machine Learning domain with the theme "Health and Safety
+            system"
+            Have been the 1st runner up at the ESIC organised
+            Vigilance Awareness Week'18 (10/2018 - 11/2018) with the theme “ Eradicate Corruption-Build a New India". (Also, got
+            3rd in the inter-school competitions held during the time)
+            </p>
+    </section>   
+            
+    <section id="contact" class="section-box">
+        <h2>Contact</h2>
+        <p>Email: btech10317.22@bitmesra.ac.in</p>
+      <p>Phone: 9091621008</p>
+      <p>Location: Purulia, West Bengal, India</p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/gourab-mahato-8b8663172/"
+          >linkedin.com/in/gourab-mahato-8b8663172</a
+        >
+      </p>
+      <p>
+        GitHub: <a href="https://github.com/Gourab357">github.com/Gourab357</a>
+      </p>
+    </section>
+
+    <footer>
+      <div id="social-links">
+        <!-- Add your social links here -->
+        <a href="https://www.linkedin.com/in/gourab-mahato-8b8663172/"
+          >LinkedIn</a
+        >
+        <a href="https://www.instagram.com/gourab_mahato/">Instagram</a>
+        <a href="https://github.com/Gourab357">GitHub</a>
+      </div>
+    </footer>
+  </body>
+</html>
